@@ -1,0 +1,12 @@
+@import "./posts/create-post.scss";
+@import "./user/user.scss";
+@import "./loader/loaderStyle.scss";
+@import "./sidebar/sidebar.scss";
+@import "./header-post//header-post.scss";
+@import "./posts/post-manager.scss";
+@import "./question//question.scss";
+
+.modal-remove {
+  width: 35% !important;
+  height: initial !important;
+}

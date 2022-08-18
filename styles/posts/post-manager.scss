@@ -1,0 +1,155 @@
+#content-wrapper {
+  #content {
+    .container-fluid {
+      .form-post-manager {
+        background-color: #ffffff;
+        .field-filter {
+          padding: 20px 0.75rem;
+          display: flex;
+          .field-value {
+            height: 38px;
+            > input {
+              height: 100%;
+              border-radius: 5px;
+              border: solid 1px lightslategray;
+              padding: 0 10px;
+            }
+          }
+          .field-add {
+            height: 38px;
+            > input {
+              height: 100%;
+              border-radius: 5px;
+              border: solid 1px #7367f0;
+              padding: 0 20px;
+              color: #7367f0;
+              background-color: #ffffff;
+            }
+          }
+        }
+        .filter {
+          margin-right: 10px;
+        }
+        .table {
+          background-color: #ffffff;
+          .thead-light {
+            .thead-table {
+              .col {
+                clear: both;
+                display: inline-block;
+                white-space: nowrap;
+              }
+              .action-th {
+                display: flex !important;
+                justify-content: center !important;
+              }
+            }
+          }
+          > tbody {
+            > tr {
+              > th {
+                width: 70px;
+                height: 70px;
+                // clear: both;
+                // display: inline-block;
+                // white-space: nowrap;
+                > img {
+                  object-fit: cover;
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+              .btn-edit {
+                margin-right: 10px;
+              }
+              .action {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+              .name-post {
+                color: #7367f0;
+              }
+              .status {
+                color: #2ec873;
+                > span {
+                  padding: 5px 5px;
+                  background-color: aliceblue;
+                  border-radius: 5px;
+                }
+              }
+            }
+          }
+        }
+        .footer-form {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-bottom: 20px;
+          padding-left: 0.75rem;
+          padding-right: 0.75rem;
+          .page-size {
+            display: flex;
+            .button-delete {
+              margin-right: 10px;
+            }
+          }
+          .pagination {
+            background-color: aliceblue;
+            > button {
+              border: none;
+              background: aliceblue;
+              > a {
+                border: navajowhite;
+              }
+            }
+            .disabled {
+              > a {
+                background-color: aliceblue;
+              }
+            }
+            .undisabled {
+              border-radius: 50%;
+              a {
+                background-color: #7367f0;
+                color: #ffffff;
+                &:hover {
+                  color: #ffffff;
+                  background-color: black;
+                  font-weight: bold;
+                }
+              }
+            }
+            > nav {
+              padding: 0px 25px;
+              > ul {
+                margin-bottom: 0;
+                > li {
+                  > a {
+                    background-color: aliceblue;
+                    border: none;
+                    .dot {
+                      border: none;
+                    }
+                  }
+                  .active-custom {
+                    color: #ffffff;
+                    background-color: #7367f0 !important;
+                  }
+                }
+                .active-custom {
+                  z-index: 100;
+                  border-radius: 50%;
+                  background-color: #7367f0 !important;
+                }
+              }
+            }
+          }
+        }
+        .hidden {
+          display: none;
+        }
+      }
+    }
+  }
+}
